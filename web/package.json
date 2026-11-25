@@ -1,0 +1,31 @@
+{
+  "name": "cloudtask-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host localhost --port 8788",
+    "build": "tsc --noEmit && vite build",
+    "deploy": "wrangler pages deploy dist --project-name cloudtask-neon --branch main",
+    "verify:production": "node scripts/verify-production.mjs",
+    "preview": "wrangler pages dev dist --port 8788",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/inter": "latest",
+    "@fontsource/montserrat": "latest",
+    "better-auth": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-react": "latest",
+    "prettier": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "wrangler": "latest"
+  }
+}

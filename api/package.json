@@ -1,0 +1,25 @@
+{
+  "name": "cloudtask-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --port 8787",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "db:local": "wrangler d1 migrations apply cloudtask-db --local",
+    "db:remote": "wrangler d1 migrations apply cloudtask-db --remote --config wrangler.production.toml",
+    "deploy": "wrangler deploy --config wrangler.production.toml",
+    "db:generate": "auth generate --config ./auth.schema.ts --output ./migrations/0001_auth.sql --yes"
+  },
+  "dependencies": {
+    "better-auth": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "latest",
+    "@cloudflare/workers-types": "latest",
+    "auth": "latest",
+    "typescript": "latest",
+    "vitest": "latest",
+    "wrangler": "latest"
+  }
+}

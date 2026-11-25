@@ -1,0 +1,30 @@
+{
+  "url": "https://cloudtask-neon.pages.dev",
+  "checkedAt": "2026-11-25T13:51:35.855Z",
+  "checks": [
+    "Pages serves application",
+    "Pages → Worker → remote D1 health",
+    "Unauthenticated access rejected",
+    "HTTPS signup A",
+    "Secure HttpOnly SameSite cookie A",
+    "HTTPS signup B",
+    "Secure HttpOnly SameSite cookie B",
+    "Create persisted task",
+    "Vietnam calendar overdue flag",
+    "Read persisted task",
+    "Account isolation",
+    "Cross-account update rejected",
+    "Cross-account delete rejected",
+    "Production rejects local Origin",
+    "Validation rejects blank title",
+    "Partial update and completion",
+    "Combined filters",
+    "Chrome signin and session survives reload on HTTPS",
+    "Production mobile 390px has no overflow",
+    "Chrome signout",
+    "Delete persisted task",
+    "Revoke API session",
+    "Signed-out session rejected"
+  ],
+  "accountsCreated": 2
+}

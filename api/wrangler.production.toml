@@ -1,0 +1,18 @@
+name = "cloudtask-api"
+main = "src/index.ts"
+account_id = "4baec70c3c35a4f0c6e93d12330a84a2"
+compatibility_date = "2026-11-17"
+compatibility_flags = ["nodejs_compat"]
+workers_dev = false
+
+[vars]
+APP_ORIGIN = "https://cloudtask-neon.pages.dev"
+
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "cloudtask-db"
+database_id = "7c4e6a37-246d-4c46-a732-e90a691f7dbb"
+migrations_dir = "migrations"
